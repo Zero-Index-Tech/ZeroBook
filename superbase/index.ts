@@ -44,7 +44,7 @@ serve(async (req) => {
         'Authorization': `Bearer ${RESEND_API_KEY}`,
       },
       body: JSON.stringify({
-        from: `${businessName} <noreply@yourdomain.com>`,
+        from: `${businessName} <info@send.zeroindex.co.za>`,
         to: customerEmail,
         subject: `Appointment Confirmation - ${businessName}`,
         html: `
@@ -82,7 +82,7 @@ serve(async (req) => {
           'Authorization': `Bearer ${RESEND_API_KEY}`,
         },
         body: JSON.stringify({
-          from: `${businessName} <noreply@yourdomain.com>`,
+          from: `${businessName} <noreply@send.zeroindex.co.za>`,
           to: ownerEmail,
           subject: `New Booking - ${booking.customerName}`,
           html: `
