@@ -210,12 +210,10 @@ async function runAllTests() {
     if (!result.passed) {
       console.log(`   ${colors.yellow}→ ${result.details}${colors.reset}`);
     // Continue with the summary...
-  });
-  
-  console.log(`\n${colors.blue}Results:${colors.reset}`);
-  console.log(`  Passed: ${colors.green}${passed}${colors.reset}`);
-  console.log(`  Failed: ${colors.red}${failed}${colors.reset}`);
-  console.log(`  Total Duration: ${totalDuration}ms\n`);
+        console.log(`\n${colors.blue}Results:${colors.reset}`);
+        console.log(`  Passed: ${colors.green}${passed}${colors.reset}`);
+        console.log(`  Failed: ${colors.red}${failed}${colors.reset}`);
+        console.log(`  Total Duration: ${totalDuration}ms\n`);
   
   // Provide next steps based on results
   if (failed > 0) {
